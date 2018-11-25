@@ -12,14 +12,14 @@ import javax.enterprise.context.RequestScoped;
  *
  * @author cvanegas
  */
-@Named(value = "personaBean")
+@Named(value = "productosBean")
 @RequestScoped
-public class PersonaBean {
+public class ProductosBean {
 
     /**
      * Creates a new instance of PersonaBean
      */
-    public PersonaBean() {
+    public ProductosBean() {
     }
     
 }
