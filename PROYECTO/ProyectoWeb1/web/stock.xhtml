@@ -28,19 +28,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#servicios"></a>
+              <a class="nav-link js-scroll-trigger" href="#servicios">Servicios</a>
             </li>
             <li class="nav-item">
-              <h:outputLink styleClass="nav-link js-scroll-trigger" value="productos">Productos</h:outputLink>
+                <h:link styleClass="nav-link js-scroll-trigger" value="productos" ="#{navigationController.showProductos()}">Productos</h:link>
             </li>
             <li class="nav-item">
-              <h:outputLink styleClass="nav-link js-scroll-trigger" value="nosotros">Nosotros</h:outputLink>
+              <h:link styleClass="nav-link js-scroll-trigger" value="nosotros" outcome="">Nosotros</h:link>
             </li>
             <li class="nav-item">
-              <h:outputLink styleClass="nav-link js-scroll-trigger" value="#team">Equipo</h:outputLink>
+              <h:link styleClass="nav-link js-scroll-trigger" value="#team">Equipo</h:link>
             </li>
             <li class="nav-item">
-              <h:outputLink styleClass="nav-link js-scroll-trigger" value="contact.jsp">Contacto</h:outputLink>
+              <h:link styleClass="nav-link js-scroll-trigger" value="contact.jsp" ></h:link>
             </li>
           </ul>
         </div> 
