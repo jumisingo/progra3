@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <title>PrimeFaces</title>
+            </f:facet>
+        </h:head>
+
+        <h:body>
+
+            <p:layout fullPage="true">
+                <p:layoutUnit position="west" size="175" header="Left" collapsible="false">
+                    <p:menu>
+                        <p:submenu label="Resources">
+                            <p:menuitem value="Index" url="/index.xhtml" />
+                            <p:menuitem value="Contacto" url="/contact.xhtml" />
+                            <p:menuitem value="Cotizar" url="/cotizacion.xhtml" />
+                            <p:menuitem value="Locacion" url="/location.xhtml" />
+                        </p:submenu>
+
+                    </p:menu>
+                </p:layoutUnit>
+
+                <p:layoutUnit position="north" size="100" resizable="true" closable="false" collapsible="false">
+                    Contacto Creativo Internacional
+                </p:layoutUnit>
+                
+                <p:layoutUnit position="west" size="175" header="Left" collapsible="false">
+                    <p:menu>
+                        <p:submenu label="Resources">
+                            <p:menuitem value="Index" url="/index.xhtml" />
+                            <p:menuitem value="Contacto" url="/contact.xhtml" />
+                            <p:menuitem value="Cotizar" url="/cotizacion.xhtml" />
+                            <p:menuitem value="Locacion" url="/location.xhtml" />
+                        </p:submenu>
+                    </p:menu>
+                </p:layoutUnit>
+
+                <p:layoutUnit position="center">
+                <h3>Página de registro</h3>
+                
+                <h:form>
+                <h:panelGrid columns="3" columnClasses="maindiv">
+                <h:outputLabel value ="Elija un producto:" for="bandera"/>
+                <h:selectOneMenu id="bandera" label="Bandera" value="#{procesaCotizacion.producto}" required="true">
+                   <f:selectItem itemLabel="" itemValue=""/>
+                   <f:selectItem itemLabel="Bandera Costa Rica" itemValue="25000"/>
+                   <f:selectItem itemLabel="Bandera Nicaragua" itemValue="28000"/>aaaa
+                   <f:selectItem itemLabel="Bandera Estados Unidos" itemValue="49000"/>
+                   <f:selectItem itemLabel="Bandera Honduras" itemValue="30000"/>
+                   <f:selectItem itemLabel="Bandera Canada" itemValue="42000"/>
+                </h:selectOneMenu>
+                <h:message for="bandera"/>    
+                </h:panelGrid>
+                
+                <h:panelGrid>
+                <h:outputLabel value ="Cantidad" for="cantidad"/>
+                <h:inputText id="cantidad" label="cantidad" required="true" value="#{procesaCotizacion.cantidad}"/> 
+                <h:message for="cantidad"/>
+                </h:panelGrid>
+                    
+                <h:panelGrid>
+                <h:commandButton id="procesaCotizacion" value="Procesar Cotizacion" action="echoCotizacion"/> 
+                </h:panelGrid>
+                </h:form>
+                </p:layoutUnit>
+                
+                <p:layoutUnit position="south" size="100" closable="true" collapsible="false">
+                Copyright CCI 2018
+                </p:layoutUnit>
+
+            </p:layout>
+        </h:body>
+
+    </f:view>
+</html>
+
