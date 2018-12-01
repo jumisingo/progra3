@@ -59,11 +59,9 @@
             
 
         </c:forEach>
-            <footer style="position: absolute; top: 140%;">
-            <p>TecnoStore CR</p>
-            <p>Todos los derechos reservados</p>
-            <p>Christian Carmona Ramos</p>
-            <p>&copy; Copyright TecnoStore Costa Rica</p>
+           <footer>
+            <p>ViajesCR</p>
+            <p>25602438</p>
         </footer>
     </body>
 </html>

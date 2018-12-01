@@ -31,20 +31,20 @@
              
                  <thead>
                     <tr>
-                        <th>Id </th>
-                        <th>NOMBRE</th>
+                        <th>DESTINO </th>
+                        <th>ORIGEN</th>
                         <th>PRECIO</th>
-                        <th>DISPONBILIDAD</th>
+                        <th>DESCUENTO</th>
                         
                     </tr>
                 </thead>
                 <tbody>
                     <c:forEach var="consultar" items="${consultar.rows}">
                     <tr>
-                        <td>${consultar.ID}</td>
-                        <td>${consultar.NOMBRE}</td>
+                        <td>${consultar.origen}</td>
+                        <td>${consultar.destino}</td>
                         <td>${consultar.PRECIO}</td>
-                        <td>${consultar.DISPONBILIDAD}</td>
+                        <td>${consultar.descuento}</td>
                     </tr>
                     </c:forEach>
                 </tbody>
@@ -54,9 +54,7 @@
                 <input type="button" value="Inicio" onclick="location.href = 'index.html'"/>
             </form>
             <br/>                    
-                
-            <li><a href="Dashboard.xhtml">DASHBOARD</a></li>
-            
+             
             
             
             </ul>

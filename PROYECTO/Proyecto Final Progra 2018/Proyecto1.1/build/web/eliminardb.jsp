@@ -39,6 +39,9 @@
                 <c:param name="errMsg" value="Datos no existen en la DB" />
             </c:redirect>
         </c:if> 
-            
+          <footer>
+            <p>ViajesCR</p>
+            <p>25602438</p>
+        </footer> 
     </body>
 </html>

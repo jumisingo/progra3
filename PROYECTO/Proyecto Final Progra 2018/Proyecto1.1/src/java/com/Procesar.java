@@ -5,7 +5,7 @@
  */
 package com;
 
-import dao.Viaje;
+import dao.Cliente;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -27,7 +27,7 @@ public class Procesar extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-      Viaje elCliente=new Cliente();   
+      Cliente elCliente=new Cliente();   
       elCliente.setNombreCliente(request.getParameter("nombreCliente"));
       elCliente.setCorreoCliente(request.getParameter("correoCliente"));
       elCliente.setTelefonoCliente(request.getContentLength());
