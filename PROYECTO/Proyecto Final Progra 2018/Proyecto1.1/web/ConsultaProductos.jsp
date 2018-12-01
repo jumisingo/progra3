@@ -24,7 +24,7 @@
                
                 
    <sql:query var="consultar" dataSource="jdbc/sample">
-            SELECT ID,NOMBRE,PRECIO,DISPONBILIDAD FROM VPRODUCTOS
+            SELECT ID,NOMBRE,PRECIO,DISPONBILIDAD FROM VIAJES
         </sql:query>
                 
             <table cellpadding="0" border="18" aling="center" cellspacing="20">

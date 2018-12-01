@@ -36,7 +36,6 @@ public class Procesar extends HttpServlet {
       elCliente.setTelefonoCliente(request.getContentLength());
       request.setAttribute("elCliente", elCliente);
       request.getRequestDispatcher("contacto.jsp").forward(request, response);
-        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
