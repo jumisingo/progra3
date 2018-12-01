@@ -29,54 +29,34 @@
 
             <ul id="nav">
                 <li><a href="index.html"> INICIO </a></li>
-                <li><a class="hsubs" href="#"> COMPUTADORAS </a>
+               
+                <li><a class="hsubs" href="#">DETALLES</a>
                     <ul class="subs">
-                        <li><a href="laptops.html">Laptop</a></li>
-                        <li><a href="gaming.html">Gaming</a></li>
-                        <li><a href="oficina.html">Oficina/Hogar</a></li>
+                        <li><a href="ConsultaProductos.jsp">Paquetes</a></li>
+                       
                     </ul>
                 </li>
-                <li><a class="hsubs" href="#"> COMPONENTES </a>
+                <li><a href="#">CONTACTENOS</a>
                     <ul class="subs">
-                        <li><a href="procesadores.html">Procesadores</a></li>
-                        <li><a href="tarjetamadre.html">Tarjeta Madre</a></li>
-                        <li><a href="ram.html">Memoria RAM</a></li>
-                        <li><a href="tarjetasvideo.html">Tarjetas de Video</a></li>
-                        <li><a href="almacenamiento.html">Almacenamiento</a></li>
-                        <li><a href="enfriamiento.html">Enfriamiento</a></li>
-                        <li><a href="cases.html">Cases</a></li>
-                        <li><a href="monitores.html">Monitores</a></li>
-                    </ul>
-                </li>
-                
-                <li><a class="hsubs" href="#">PERIFÉRICOS</a>
-                    <ul class="subs">
-                        <li><a href="teclados.html">Teclados</a></li>
-                        <li><a href="mouse.html">Mouse</a></li>
-                        <li><a href="headset.html">Headset</a></li>
-                        <li><a href="parlantes.html">Parlantes</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">CONSOLAS</a>
-                    <ul class="subs">
-                        <li><a href="Games.html">CONSOLAS</a></li>
+                        <li><a href="contact.jsp">CONTACTENOS</a></li>
                     </ul></li>
-                <li><a href="#">CONTACTENOS</a></li>
-                <li><a href="acceso.jsp">INI. SESION</a>
-                </li>
+              
+                
                 <div id="lavalamp"></div>
             </ul>
         </div>
         <sql:query var="info" dataSource="jdbc/sample">
-            SELECT * FROM productosTECNO
-            WHERE nombre = '${param.nombre}'
+            SELECT * FROM viajes
+            WHERE id = '${param.id}'
         </sql:query>
 
 
-        <c:forEach var="informe" items="${info.rows}">
-            <h1>${informe.nombre}</h1>
-            <h3 class="precio">Precio: ${informe.precio}$</h3>
-            <img src="${informe.N_imagen}" id="imgid">
+        <c:forEach var="viaje" items="${info.rows}">
+            <h1>Destino: ${viaje.destino}</h1>
+            <h1>Origen: ${viaje.origen}</h1>
+            <h3 class="precio">Precio: ${viaje.precio}$</h3>
+            <h3>${viaje.descuento}</h3>
+            
 
         </c:forEach>
             <footer style="position: absolute; top: 140%;">

@@ -5,7 +5,7 @@
  */
 package com;
 
-import dao.Cliente;
+import dao.Viaje;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -13,10 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author Familia
- */
+
 public class Procesar extends HttpServlet {
 
     /**
@@ -30,7 +27,7 @@ public class Procesar extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-      Cliente elCliente=new Cliente();   
+      Viaje elCliente=new Cliente();   
       elCliente.setNombreCliente(request.getParameter("nombreCliente"));
       elCliente.setCorreoCliente(request.getParameter("correoCliente"));
       elCliente.setTelefonoCliente(request.getContentLength());

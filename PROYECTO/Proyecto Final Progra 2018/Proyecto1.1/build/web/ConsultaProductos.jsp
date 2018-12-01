@@ -24,7 +24,7 @@
                
                 
    <sql:query var="consultar" dataSource="jdbc/sample">
-            SELECT ID,NOMBRE,PRECIO,DISPONBILIDAD FROM VIAJES
+            SELECT ID,PRECIO,destino, origen FROM VIAJES
         </sql:query>
                 
             <table cellpadding="0" border="18" aling="center" cellspacing="20">
@@ -63,13 +63,9 @@
         </div>   
             
                      
-<footer>
-            <p>TecnoStore CR</p>
-            <p>Todos los derechos reservados</p>
-            <p>Christian Carmona</p>
-            <p>Keylor Badilla</p>
-            <p>Julian Vanegas</p>
-            <p>&copy; Copyright TecnoStore Costa Rica</p>
+        <footer>
+            <p>ViajesCR</p>
+            <p>25602438</p>
         </footer>
     </body>
 </html>

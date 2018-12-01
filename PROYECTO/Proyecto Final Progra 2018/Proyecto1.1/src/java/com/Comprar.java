@@ -1,11 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com;
 
-import dao.Producto;
+import dao.Viaje;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -22,13 +18,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author christian
- */
+
 public class Comprar extends HttpServlet {
 
-    private static String dbUrl = "jdbc:derby://localhost:1527/S&V;user=venta;password=venta";
+    private static String dbUrl = "jdbc:derby://localhost:1527/S&V;user=app;password=";
     private static Connection conn = null;
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -47,20 +40,21 @@ public class Comprar extends HttpServlet {
                 /*com.mysql.jdbc.Driver*/
                 try {
                     conn = DriverManager.getConnection(dbUrl);
-                    Producto p = new Producto();
+                    Viaje p = new Viaje();
                     Statement stmt = conn.createStatement();
                     ResultSet rs;
-                    rs = stmt.executeQuery("SELECT * FROM VENTA.PRODUCTO");
+                    rs = stmt.executeQuery("SELECT * FROM aviajes");
                     
                     while(rs.next()){
-                        p.setIdProducto(rs.getInt(1));
-                        p.setNombreProducto(rs.getString(2));
-                        p.setTipoProducto(rs.getString(3));
-                        p.setPrecioUnitario(rs.getInt(4));
-                    }
+                        p.setId(rs.getInt(1));
+                        p.setPrecio(rs.getInt(2));
+                        p.setOrigen(rs.getString(3));
+                        p.setDestino(rs.getString(4));
+                        p.setDescuento(rs.getInt(5));
                     
                     request.setAttribute("producto", p);
                     request.getRequestDispatcher("factura.jsp").forward(request, response);
+                    }
                 } catch (SQLException ex) {
                     Logger.getLogger(Comprar.class.getName()).log(Level.SEVERE, null, ex);
                 }
