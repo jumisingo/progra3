@@ -9,11 +9,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>DB DELETE Operation</title>
+        <title>ViajesCR</title>
     </head>
     
     <body>
-        <body background="images/pc.jpg">
+        <body>
 
         <c:if test="${ empty param.id}">
             <c:redirect url="eliminar.jsp" >
@@ -22,7 +22,7 @@
         </c:if>
        
         <sql:update var="eliminar" dataSource="jdbc/sample">
-            DELETE FROM CUSTOMER WHERE CUSTOMER_ID=${param["id"]}
+            DELETE FROM contactos WHERE id=${param["id"]}
         </sql:update>
         
         <c:if test="${eliminar>=1}">

@@ -6,11 +6,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Insertar Datos</title>
+        <title>ViajesCR - Insertar Contacto</title>
     </head>
-      <body background="resources/img/imagenes productos/contacto.png">
-    <body>
-        <body background="images/pc.jpg">
+      <body>
         <form action="contact.jsp" method="post">
             <table border="0" cellspacing="2" cellpadding="5">
                 <thead>

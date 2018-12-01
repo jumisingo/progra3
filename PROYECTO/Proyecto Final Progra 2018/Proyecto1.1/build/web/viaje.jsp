@@ -32,7 +32,7 @@
                
                 <li><a class="hsubs" href="#">DETALLES</a>
                     <ul class="subs">
-                        <li><a href="ConsultaProductos.jsp">Paquetes</a></li>
+                        <li><a href="ConsultaViajes.jsp">Paquetes</a></li>
                        
                     </ul>
                 </li>

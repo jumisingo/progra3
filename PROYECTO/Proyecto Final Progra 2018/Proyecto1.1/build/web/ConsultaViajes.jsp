@@ -13,18 +13,39 @@
     </head>
     
     <body>
-        <body background="resources/img/imagenes productos/LISTA.png">
+        <body>
             
          <header>
-            <h2>TecnoStore</h2>
+            <h2>Viajes CR - Consulta Viajes</h2>
         </header>
+            <div class="container">
+            
+
+            <ul id="nav">
+                <li><a href="index.html"> INICIO </a></li>
+               
+                <li><a class="hsubs" href="#">DETALLES</a>
+                    <ul class="subs">
+                        <li><a href="ConsultaViajes.jsp">Paquetes</a></li>
+                       
+                    </ul>
+                </li>
+                <li><a href="#">CONTACTENOS</a>
+                    <ul class="subs">
+                        <li><a href="contact.jsp">CONTACTENOS</a></li>
+                    </ul></li>
+              
+                
+                <div id="lavalamp"></div>
+            </ul>
+            
         <div class="container">
 
             
                
                 
    <sql:query var="consultar" dataSource="jdbc/sample">
-            SELECT ID,PRECIO,destino,origen FROM app.VIAJES
+            SELECT codigo,PRECIO,destino,origen FROM app.VIAJE
         </sql:query>
                 
             <table cellpadding="0" border="18" aling="center" cellspacing="20">
@@ -60,7 +81,7 @@
             
             </ul>
         </div>   
-            
+        </div>
                      
         <footer>
             <p>ViajesCR</p>

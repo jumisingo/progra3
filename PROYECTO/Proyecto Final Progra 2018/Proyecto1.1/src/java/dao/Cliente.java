@@ -7,10 +7,7 @@ package dao;
 
 import javax.ejb.Stateless;
 
-/**
- *
- * @author Familia
- */
+
 @Stateless
 public class Cliente {
 

@@ -12,9 +12,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Insertar Datos</title>
     </head>
-      <body background="resources/img/imagenes productos/contacto.png">
+      <body>
     <body>
-        <body background="images/pc.jpg">
+        <body>
         
  
         <br>
@@ -34,7 +34,7 @@
        
 
         <sql:update var="insertar" dataSource="jdbc/sample">
-            INSERT INTO contactos (ID,NOMBRECLIENTE, APELLIDOCLIENTE, DIRECCIONCLIENTE, TELEFONOCLIENTE, CORREOCLIENTE) VALUES (?, ?, ?, ?, ?)
+            INSERT INTO contactos (ID,nombre, apellido, direccion, telefono, correo) VALUES (?, ?, ?, ?, ?)
             <sql:param value='${param["id"]}' />
             <sql:param value='${param["NOMBRE"]}' />
             <sql:param value='${param["APELLIDO"]}' />
@@ -51,27 +51,6 @@
             </c:redirect>
         </c:if> 
             
-    </body>
-  
-
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>DB SELECT Operation</title>
-        <header>        
-            <a href="index.html" ><img src="resources/css/Icono-Home1.png" id="home" width="50"/></a>
-        </header>
-  <body background="resources/img/imagenes productos/contacto.png">
-    
-    <body>
- 
-                
-            </table>
-            
-            <br>
-            <form>
-                <input type="button"  value="Inicio" onclick="location.href = 'index.html'"/>
-            </form>
             <br/> 
         <footer>
             <p>ViajesCR</p>

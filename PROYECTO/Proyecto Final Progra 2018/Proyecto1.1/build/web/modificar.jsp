@@ -10,7 +10,7 @@
     </head>
     
     <body>
-       <body background="resources/img/imagenes productos/modificar.jpg">
+       <body>
         <form action="modificardb.jsp" method="post">
             <table border="0" cellspacing="2" cellpadding="5">
                 <thead>

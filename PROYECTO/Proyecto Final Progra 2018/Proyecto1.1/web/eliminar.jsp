@@ -8,15 +8,13 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Eliminar Datos</title>
     </head>
-       <body background="resources/img/imagenes productos/eliminar.jpg">
-    <body>
-        <body background="images/pc.jpg">
+       <body>
         
         <form action="eliminardb.jsp" method="post">
             <table border="0" cellspacing="2" cellpadding="5">
                 <thead>
                     <tr>
-                        <th colspan="2">Eliminar Clientes</th>
+                        <th colspan="2">Eliminar Contacto</th>
                     </tr>
                 </thead>
                 <tbody>
