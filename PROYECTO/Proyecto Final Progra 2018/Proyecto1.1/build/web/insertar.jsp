@@ -5,17 +5,46 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8" />
+        <link href="resources/css/layout.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/menu.css" rel="stylesheet" type="text/css"/>
+        <title>ViajesCR - Insertar Contacto</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Insertar Datos</title>
     </head>
       <body>
     <body>
-        <body>
+        <header>
+            <h2>ViajesCR</h2>
+        </header>
+        
+        <div class="container">
+            
+
+            <ul id="nav">
+                <li><a href="index.html"> INICIO </a></li>
+               
+                <li><a class="hsubs" href="#">DETALLES</a>
+                    <ul class="subs">
+                        <li><a href="ConsultaViajes.jsp">Paquetes</a></li>
+                       
+                    </ul>
+                </li>
+                <li><a href="#">CONTACTENOS</a>
+                    <ul class="subs">
+                        <li><a href="contact.jsp">CONTACTENOS</a></li>
+                    </ul></li>
+              
+                
+                <div id="lavalamp"></div>
+            </ul>
+            
+        </div>
         <form action="insertardb.jsp" method="post">
             <table border="0" cellspacing="2" cellpadding="5">
                 <thead>
                     <tr>
-                        <th colspan="2">Insertar Clientes</th>
+                        <th colspan="2">ViajesCR - Insertar Contacto</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -46,13 +75,5 @@
                 </tbody>
             </table>
         </form>
- 
-        <br>
-          <form>
-                <input type="button" value="Inicio" onclick="location.href = 'admin.jsp'"/>
-            </form>
-        <br>
-
     </body>
-    
 </html>

@@ -6,7 +6,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Modificar Datos</title>
+        <title>ViajesCR - Modificar Datos</title>
     </head>
     
     <body>

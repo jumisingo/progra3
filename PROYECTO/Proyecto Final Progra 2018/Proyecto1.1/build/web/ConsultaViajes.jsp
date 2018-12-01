@@ -13,10 +13,8 @@
     </head>
     
     <body>
-        <body>
-            
          <header>
-            <h2>Viajes CR - Consulta Viajes</h2>
+            <h2>ViajesCR - Consulta Viajes</h2>
         </header>
             <div class="container">
             
@@ -70,16 +68,10 @@
                     </tr>
                     </c:forEach>
                 </tbody>
-            </table>
-            <br>
-            <form>
-                <input type="button" value="Inicio" onclick="location.href = 'index.html'"/>
-            </form>
-            <br/>                    
+            </table>             
              
             
-            
-            </ul>
+        
         </div>   
         </div>
                      

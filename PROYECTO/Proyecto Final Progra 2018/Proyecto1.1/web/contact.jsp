@@ -9,8 +9,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="resources/css/layout.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/menu.css" rel="stylesheet" type="text/css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Insertar Datos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Viajes CR - Insertar Datos</title>
     </head>
       <body>
     <body>
@@ -34,13 +37,12 @@
        
 
         <sql:update var="insertar" dataSource="jdbc/sample">
-            INSERT INTO contactos (ID,nombre, apellido, direccion, telefono, correo) VALUES (?, ?, ?, ?, ?)
+            INSERT INTO contactos (ID,nombre, apellido, direccion, telefono) VALUES (?, ?, ?, ?, ?)
             <sql:param value='${param["id"]}' />
             <sql:param value='${param["NOMBRE"]}' />
             <sql:param value='${param["APELLIDO"]}' />
             <sql:param value='${param["DIRECCION"]}' />
             <sql:param value='${param["TELEFONO"]}' />
-            <sql:param value='${param["CORREO"]}' />
         </sql:update>
             
         

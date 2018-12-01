@@ -29,12 +29,6 @@
                 </tbody>
             </table>
         </form>
- 
-        <br>
-         <form>
-                <input type="button" value="Inicio" onclick="location.href = 'admin.jsp'"/>
-            </form>
-        <br>
 
         <footer>
             <p>ViajesCR</p>

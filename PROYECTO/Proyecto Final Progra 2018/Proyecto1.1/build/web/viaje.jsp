@@ -38,7 +38,7 @@
                 </li>
                 <li><a href="#">CONTACTENOS</a>
                     <ul class="subs">
-                        <li><a href="contact.jsp">CONTACTENOS</a></li>
+                        <li><a href="contact.jsp">CONTACTO</a></li>
                     </ul></li>
               
                 
