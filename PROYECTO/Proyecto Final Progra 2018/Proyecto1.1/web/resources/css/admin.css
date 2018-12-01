@@ -1,0 +1,114 @@
+header {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height:75px;
+    background-color:#212121;
+    box-shadow: 0 -1px 2px #111111;
+    color: white;
+    display:block;
+    width:100%;
+    z-index:100;
+}
+header h2{
+    font-size:45px;
+    font-weight:normal;
+    font-family:  Arial;
+    left:30%;
+    margin-left:-400px;
+    padding: 22px;
+    margin-top: 0%;
+    position:absolute;
+    width:540px;
+}
+h1{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    border-style: solid;
+    border-color: #00B4FF;
+    border-radius: 12px;
+    padding: 10px;
+}
+h3{
+    font-family: serif;
+    color: crimson;
+}
+h5{
+    position: absolute;
+    font-family: serif;
+    font-size: 15px;
+    font-weight: normal;
+    top: 30%;
+    left: 70%;
+    border-style: solid;
+    border-color: crimson;
+    border-radius: 12px;
+    padding: 10px;
+}
+h6{
+    position: absolute;
+    font-family: serif;
+    font-size: 15px;
+    font-weight: normal;
+    top: 30%;
+    left: 70%;
+    border-style: solid;
+    border-color: greenyellow;
+    border-radius: 12px;
+    padding: 10px;
+}
+#busqueda{
+    position:absolute;
+    width: 15%;
+    top: 32%;
+    left: 49%;
+    border-width: 2px;
+}
+#tablaMuestra{
+    position:absolute;
+    width: 35%;
+    top: 35%;
+    left: 10%;
+    border-style: solid ;
+    border-width: 2px;
+    border-color: #212121;
+}
+td{
+    border: 0px;
+}
+#tablaBusqueda{
+    position:absolute;
+    width: 35%;
+    top: 65%;
+    left: 55%;
+    border-style: solid ;
+    border-width: 5px;
+    border-color: #212121;
+}
+footer{
+    background-color: #212121;
+    text-align: center;
+    height: 220px;
+    position: absolute;
+    width: 100%;
+    top: 310%;
+    left: 0%;
+    padding-top: 1%;
+    color: white;
+    font-size: 90%;
+}
+#home{
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    width: 3%;
+    height: 50%;
+}
+#imgid{
+    position: absolute;
+    top: 35%;
+    width: 22%;
+    height: 45%;
+}

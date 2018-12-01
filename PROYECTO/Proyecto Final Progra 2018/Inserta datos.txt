@@ -1,0 +1,254 @@
+/*
+   Aqui inserta cada producto en la base de datos que se debe 
+   recrear con el .grab
+*/
+
+INSERT INTO VENTAS (CUSTOMER_ID,DISCOUNT_CODE,NAME,CITY)
+VALUES(1,'BAJO', 220,'playstation',ALAJUELAA);
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(2,'Zotac 1060 6gb', 425,'resources/img/imagenes productos/zotac-geforce-gtx-1060-6-gb.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(3,'Corsair Carbide Spec', 90,'resources/img/imagenes productos/corsair-carbide-spec-04-rojo.jpg');
+
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(4,'AMD Ryzen 7 1700x', 100,'resources/img/imagenes productos/amd-ryzen-7-1700x.jpg');
+
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(5,'Monitor AoC', 30,'resources/img/imagenes productos');
+
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(6,'Intel core i5 7400', 120,'resources/img/imagenes productos/intel-core-i5-7400.jpg');
+
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(7,'Bitfenix Neos Azul', 100,'resources/img/imagenes productos/bitfenix-neos-azul.jpg');
+
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(8,'Disco Duro Toshiba 1TB', 80,'resources/img/imagenes productos/Disco-Duro-Toshiba-1-TB-7200-RPM.jpg');
+
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(9,'HyperX Fury 8GB DDR3', 101,'resources/img/imagenes productos/HyperX-Fury-8-GB-DDR3-1866.jpg');
+
+
+otros
+
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(10,'resources/img/imagenes productos/amd-ryzen-5-1600x.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(11,'Intel core i5 7640x',350,'resources/img/imagenes productos');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(12,'Intel core i7 7700',400,'resources/img/imagenes productos');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(13,'Intel core i7 7740x',425,'resources/img/imagenes productos');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(14,'MSI geforce gtx 1060 gaming',325,'resources/img/imagenes productos');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(15,'MSI Radeon RX 580',350,'resources/img/imagenes productos');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(16,'Zotac geforce gtx 1050 2GB',375,'resources/img/imagenes productos');
+
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(17,'Zotac geforce gtx 1060 3GB',400,'resources/img/imagenes productos');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(18,'Zotac geforce gtx 1060 6GB',425,'resources/img/imagenes productos');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(19,'Corsair Carbide Spec Rojo ',90,'resources/img/imagenes productos');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(20,'Corsair Graphite 780T Negro',150,'resources/img/imagenes productos');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(21,'Phanteks Eclipse P400s Blanco',110,'resources/img/imagenes productos');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(22,'Thermaltake Versa C22 RGB',135,'resources/img/imagenes productos');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(23,'Monitor Aoc',100,'resources/img/imagenes productos/aoc-e2270sw.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(24,'Acer VX5',1700,'resources/img/imagenes productos/acer-vx5.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(25,'Alienware 15',2000,'resources/img/imagenes productos/alienware-15.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(26,'Gigabyte P55W v6',1500,'resources/img/imagenes productos/gigabyte-p55w-v6.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(27,'MSI G162M',1850,'resources/img/imagenes productos/msi-gl62m.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(28,'Artic Pc',1200,'resources/img/imagenes productos/xtremepc-arctic.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(29,'Crystal Pc',1100,'resources/img/imagenes productos/xtremepc-crystal.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(30,'Pc low',325,'resources/img/imagenes productos/xtremepc-level-1.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(31,'Pc Medium',600,'resources/img/imagenes productos/xtremepc-level-2.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(32,'Pc high',850,'resources/img/imagenes productos/xtremepc-level-3-green.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(33,'Pc mega',1100,'resources/img/imagenes productos/xtremepc-level-4.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(34,'Pc Sniper',1500,'resources/img/imagenes productos/xtremepc-sniper.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(35,'Pc Oficina Amd',800,'resources/img/imagenes productos/pc-hogar-y-oficina-amd.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(36,'Pc Oficina Intel',850,'resources/img/imagenes productos/pc-hogar-y-oficina-intel-core-i3-skylake.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(37,'Gigabyte AB320M hd2',150,'resources/img/imagenes productos/gigabyte-ab320m-hd2.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(38,'Gigabyte AB350 Gaming',200,'resources/img/imagenes productos/gigabyte-ab350-gaming-3.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(39,'MSI B350M Gaming-Pro',200,'resources/img/imagenes productos/msi-b350m-gaming-pro.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(40,'MSI H270 Tomahawk-Artic',300,'resources/img/imagenes productos/msi-h270-tomahawk-arctic.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(41,'Redragon K556',100,'resources/img/imagenes productos/redragon-k556-devarajas.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(42,'Redragon K552',100,'resources/img/imagenes productos/redragon-k552-kumara.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(43,'Razer Ornata',120,'resources/img/imagenes productos/razer-ornata.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(44,'Razer blackwidow x Chroma',120,'resources/img/imagenes productos/razer-blackwidow-x-chroma.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(45,'MSI GK701',110,'resources/img/imagenes productos/msi-gk-701.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(46,'Azio MK Retro',130,'resources/img/imagenes productos/azio-mk-retro.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(47,'Aorus AGC300',220,'resources/img/imagenes productos/aorus-agc300.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(48,'Marvo CH101 Negra',220,'resources/img/imagenes productos/marvo-ch-101-verde.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(49,'Marvo CH101 Verde',220,'resources/img/imagenes productos/marvo-ch-101-verde.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(50,'Marvo CH106 Rojo',220,'resources/img/imagenes productos/marvo-ch-106-rojo.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(51,'Marvo CH106 Verde',220,'resources/img/imagenes productos/marvo-ch-106-verde.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(52,'Razer Naga Chroma',100,'resources/img/imagenes productos/Razer-Naga-Chroma.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(53,'LogitechG600',110,'resources/img/imagenes productos/logitech-g600.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(54,'MSI Interceptor DS100',90,'resources/img/imagenes productos/msi-interceptor-ds100.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(55,'Razer Abyssus',130,'resources/img/imagenes productos/razer-abyssus-v2.jpg');
+
+
+
+
+
+
+
+
+
+
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(56,'Play Station',230,'resources/img/imagenes productos/playstation1.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(57,'xbox',210,'resources/img/imagenes productos/xbox.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(58,'Kit Manejo',110,'resources/img/imagenes productos/logitech-g29-shifter.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(60,'Nintendo',300,'resources/img/imagenes productos/nintendo.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(60,'Nintendo Switch',300,'resources/img/imagenes productos/Nintendo Switch.jpg');
+
+INSERT INTO productostecno (id,nombre,precio,N_imagen)
+VALUES(62,'PLAY5',300,'resources/img/imagenes productos/PLAY5.jpg');
+
+
+
+
+INSERT INTO CONSULTA (id,nombre,N_IMAGEN,STATUS)
+VALUES(2,'XBOX','resources/img/imagenes productos/PLAY5.jpg',DISPONIBLE)
+
+
+
+
+
+// DATOSCLIENTE//
+
+INSERT INTO APP.DATOSCLIENTE (CUSTOMER_ID, DISCOUNT_CODE, ZIP, "NAME", CITY) 
+	VALUES (1, 'M', '1001', 'CHRISTIAN CARMONA', 'BARREAL HEREDIA')
+
+
+
+
+INSERT INTO APP.VENTAS (CUSTOMER_ID, DISCOUNT_CODE, "NAME", CITY) 
+	VALUES (3, 'ALTO', 'MONITOR ASUS', 'HEREDIA');
+
+INSERT INTO APP.VENTAS (CUSTOMER_ID, DISCOUNT_CODE, "NAME", CITY) 
+	VALUES (4, 'BAJO', 'ZOTAC 1060', 'SAN JOSE');
+
+INSERT INTO APP.VENTAS (CUSTOMER_ID, DISCOUNT_CODE, "NAME", CITY) 
+	VALUES (5, 'ALTO', 'DISCO DURO', 'HEREDIA');
+
+
+
+
+
+VProductos
+
+INSERT INTO APP.VPRODUCTOS (ID, NOMBRE, PRECIO, DISPONBILIDAD) 
+	VALUES (3, 'MONITOR ASUS', 100000, 'Inmediata');
+
+INSERT INTO APP.VPRODUCTOS (ID, NOMBRE, PRECIO, DISPONBILIDAD) 
+	VALUES (4, 'DISCO DURO', 50000, 'Inmediata');
+
+INSERT INTO APP.VPRODUCTOS (ID, NOMBRE, PRECIO, DISPONBILIDAD) 
+	VALUES (5, 'MONITOR ASUS', 100000, 'Inmediata');
+
+INSERT INTO APP.VPRODUCTOS (ID, NOMBRE, PRECIO, DISPONBILIDAD) 
+	VALUES (6, 'Kit Manejo', 150000, 'Inmediata');
+

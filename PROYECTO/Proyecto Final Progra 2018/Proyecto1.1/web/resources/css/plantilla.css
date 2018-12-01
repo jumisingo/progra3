@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 03-feb-2016, 14:33:08
+    Author     : Familia
+*/
+
+    body{
+/* Permalink - use to edit and share this gradient: &http://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,2c2c2c+16,1c1c1c+22,666666+25,000000+25,000000+25,111111+35,474747+39,2b2b2b+39,131313+44&0.99+4,1+6; */
+background: -moz-linear-gradient(45deg,  rgba(76,76,76,0.99) 0%, rgba(80,80,80,0.99) 4%, rgba(82,82,82,1) 6%, rgba(89,89,89,1) 12%, rgba(44,44,44,1) 16%, rgba(28,28,28,1) 22%, rgba(0,0,0,1) 25%, rgba(17,17,17,1) 35%, rgba(43,43,43,1) 39%, rgba(19,19,19,1) 44%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  rgba(76,76,76,0.99) 0%,rgba(80,80,80,0.99) 4%,rgba(82,82,82,1) 6%,rgba(89,89,89,1) 12%,rgba(44,44,44,1) 16%,rgba(28,28,28,1) 22%,rgba(0,0,0,1) 25%,rgba(17,17,17,1) 35%,rgba(43,43,43,1) 39%,rgba(19,19,19,1) 44%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  rgba(76,76,76,0.99) 0%,rgba(80,80,80,0.99) 4%,rgba(82,82,82,1) 6%,rgba(89,89,89,1) 12%,rgba(44,44,44,1) 16%,rgba(28,28,28,1) 22%,rgba(0,0,0,1) 25%,rgba(17,17,17,1) 35%,rgba(43,43,43,1) 39%,rgba(19,19,19,1) 44%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc4c4c4c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+   
+}
+ 
+
+#apDiv1{
+    
+    color:white;
+    position: absolute;
+    width: 644px;
+    height: 431px;
+    z-index: 4;
+    left: 571px;
+    top: 200px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 6%;
+}
+
+h2{
+    color:white;
+    text-align:center;
+}
+
+#apDiv2{
+    
+    color:white;
+    position: absolute;
+    width: 644px;
+    height: 431px;
+    z-index: 4;
+    left: 571px;
+    top: 200px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 6%;
+    text-align:center;
+}
+
+#apDiv3{
+    color:white;
+    position: absolute;
+    width: 544px;
+    height: 331px;
+    z-index: 4;
+    left: 650px;
+    top: 250px;
+    
+    border-radius: 6%;
+    text-align:center;
+    
+}

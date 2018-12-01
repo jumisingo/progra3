@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Registro</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>
+        <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+        <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+    <h:outputStylesheet library="css" name="plan.css"/>
+    <style type="text/css">
+        body {
+	background-image: url(resources/images/x.jpg);}
+       
+        </style>
+    </h:head>
+    <h:body>
+      
+        
+        <h2>Pagina de Registro</h2>     
+        <div id="apDiv1">
+            <h3>Registro</h3>
+        <h:form>
+            <h:panelGrid columns="3" columnClasses="rightalign,leftalign,leftalign ">
+               
+                <h:outputLabel value="Nombre: " for="nombre" />
+                <h:inputText id="nombre" label="Nombre" required="true" value="#{user.nombre}"/>
+                <h:message for="nombre"/>
+                
+                <h:outputLabel value="Id: " for="cedula" />
+                <h:inputText id="cedula" label="Cedula" required="true" value="#{user.cedula}"/>
+                <h:message for="cedula"/>
+                
+                <h:outputLabel value="Apellidos: " for="apellidos" />
+                <h:inputText id="apellidos" label="Apellidos" required="true" value="#{user.apellido}"/>
+                <h:message for="apellidos"/>
+                
+                <h:outputLabel value="Direccion: " for="direccion" />
+                <h:inputText id="direccion" label="Direccion" required="true" value="#{user.direccion}"/>
+                <h:message for="direccion"/>
+                
+                <h:outputLabel value="Telefono: " for="telefono" />
+                <h:inputText id="telefono" label="Telefono" required="true" value="#{user.telefono}"/>
+                <h:message for="telefono"/>
+                
+                <h:outputLabel value="Edad: " for="edad" />
+                <h:inputText id="edad" label="Edad" size="2" required="true" value="#{user.edad}">
+                    <f:validateDoubleRange minimum="18" maximum="140"/>
+                </h:inputText>
+                <h:message for="edad"/>
+                
+                <h:outputLabel value="Correo: " for="correo" />
+                <h:inputText id="correo" label="Correo" required="true" value="#{user.correo}">
+                <f:validator validatorId="Validacion"/>
+                </h:inputText>
+                <h:message for="correo"/>
+                
+                <h:outputLabel value="Contraseña: " for="contraseña" />
+                
+                <h:inputText id="contraseña"   label="Contraseña" required="true" value="#{user.contraseña}"> 
+                    
+                </h:inputText>
+                <h:message for="contraseña"/>
+               
+                <h:panelGroup/>
+                
+           
+                <h:commandButton id="registrarse" value="Registrarse" action="confirma"/>  <a href="index.xhtml">Volver</a>
+                              
+            </h:panelGrid>
+            
+        </h:form>
+            <br/>
+            <br/>
+            
+        <img src= "resources/images/syv.jpg"/>
+        </div>
+        
+        
+       
+    </h:body>
+</html>
+

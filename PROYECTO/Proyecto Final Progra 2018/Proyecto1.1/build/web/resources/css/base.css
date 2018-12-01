@@ -1,0 +1,27 @@
+html,body{
+	font-family:sans-serif;
+	height:100%;
+}
+p{
+	line-height: 1.2;
+	padding: 10px;
+}
+#page-wrapper{
+       
+	padding:7px;
+}
+#page-content{
+	background-color: rgba(0,0,0,0.5);
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	border-radius:15px;	
+	height:35%;
+	max-width:350px;;
+	margin: 0 auto;
+        top: 200px;
+        color: white;
+        width: 300px;
+        z-index: 4;
+        left: 700px;
+        position: absolute;
+}
