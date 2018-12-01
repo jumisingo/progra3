@@ -11,7 +11,7 @@
     height: 58px;
     padding: 0 0 0 9px;
     position: relative;
-    width: 957px;
+    width: 947px;
 }
 #nav ul {
     background-color: #222;
@@ -47,6 +47,7 @@
     background: url('menu_line.png') no-repeat scroll right 5px transparent;
     float: left;
     position: relative;
+    border-radius:
 }
 #nav li a {
     color: #FFFFFF;
@@ -118,16 +119,5 @@
 }
 #nav li:nth-of-type(3):hover ~ #lavalamp {
     left: 300px;
-}
-#nav li:nth-of-type(4):hover ~ #lavalamp {
-    left: 447px;
-}
-#nav li:nth-of-type(5):hover ~ #lavalamp {
-    left: 585px;
-}
-#nav li:nth-of-type(6):hover ~ #lavalamp {
-    left: 730px;
-}
-#nav li:nth-of-type(7):hover ~ #lavalamp {
-    left: 865px;
+    border-radius: 10px;
 }

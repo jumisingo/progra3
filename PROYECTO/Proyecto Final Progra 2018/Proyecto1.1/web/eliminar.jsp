@@ -38,7 +38,10 @@
             </form>
         <br>
 
- 
+        <footer>
+            <p>ViajesCR</p>
+            <p>25602438</p>
+        </footer>
     </body>
     
 </html>

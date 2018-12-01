@@ -11,7 +11,7 @@
       <body background="resources/img/imagenes productos/contacto.png">
     <body>
         <body background="images/pc.jpg">
-        <form action="contacto.jsp" method="post">
+        <form action="contact.jsp" method="post">
             <table border="0" cellspacing="2" cellpadding="5">
                 <thead>
                     <tr>

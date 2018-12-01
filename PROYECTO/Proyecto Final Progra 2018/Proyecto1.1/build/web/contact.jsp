@@ -34,7 +34,7 @@
        
 
         <sql:update var="insertar" dataSource="jdbc/sample">
-            INSERT INTO CONTACTENOS (ID,NOMBRECLIENTE, APELLIDOCLIENTE, DIRECCIONCLIENTE, TELEFONOCLIENTE, CORREOCLIENTE) VALUES (?, ?, ?, ?, ?)
+            INSERT INTO contactos (ID,NOMBRECLIENTE, APELLIDOCLIENTE, DIRECCIONCLIENTE, TELEFONOCLIENTE, CORREOCLIENTE) VALUES (?, ?, ?, ?, ?)
             <sql:param value='${param["id"]}' />
             <sql:param value='${param["NOMBRE"]}' />
             <sql:param value='${param["APELLIDO"]}' />
@@ -73,7 +73,10 @@
                 <input type="button"  value="Inicio" onclick="location.href = 'index.html'"/>
             </form>
             <br/> 
-
+        <footer>
+            <p>ViajesCR</p>
+            <p>25602438</p>
+        </footer>
     </body>
 </html>
       

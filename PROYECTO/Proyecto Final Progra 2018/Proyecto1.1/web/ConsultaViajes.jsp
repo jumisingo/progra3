@@ -9,7 +9,7 @@
 <link href="resources/css/menu.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" type="image/png" href="resources/img/Power-icon.png">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Lista de Producto</title>
+        <title>Lista de Viajes</title>
     </head>
     
     <body>
@@ -24,13 +24,13 @@
                
                 
    <sql:query var="consultar" dataSource="jdbc/sample">
-            SELECT ID,PRECIO,destino, origen FROM VIAJES
+            SELECT ID,PRECIO,destino,origen FROM app.VIAJES
         </sql:query>
                 
             <table cellpadding="0" border="18" aling="center" cellspacing="20">
              
                  <thead>
-                    <tr>
+                        <tr>PLAN<th>
                         <th>DESTINO </th>
                         <th>ORIGEN</th>
                         <th>PRECIO</th>
@@ -41,9 +41,10 @@
                 <tbody>
                     <c:forEach var="consultar" items="${consultar.rows}">
                     <tr>
+                        <th>${consultar.id}</th>
                         <td>${consultar.origen}</td>
                         <td>${consultar.destino}</td>
-                        <td>${consultar.PRECIO}</td>
+                        <td>${consultar.precio}</td>
                         <td>${consultar.descuento}</td>
                     </tr>
                     </c:forEach>
