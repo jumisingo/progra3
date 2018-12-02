@@ -37,7 +37,7 @@
             </ul>
             <div class="container">
         <form action="contact.jsp" method="post">
-            <table border="0" cellspacing="2" cellpadding="5">
+            <table border="0" cellspacing=" 2" cellpadding="5">
                 <thead>
                     <tr>
                         <th colspan="2">Inserte sus Datos</th>
