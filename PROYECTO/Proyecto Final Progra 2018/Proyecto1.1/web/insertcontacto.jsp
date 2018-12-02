@@ -31,7 +31,9 @@
                     <ul class="subs">
                         <li><a href="contact.jsp">CONTACTENOS</a></li>
                     </ul></li>
-              
+                <li>
+                    <a href="faces/Create.xhtml">Contacto</a>
+                </li>
                 
                 <div id="lavalamp"></div>
             </ul>

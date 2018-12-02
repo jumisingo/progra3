@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.CreateContactosTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.CreateContactosLabel_id}" for="id" />
+                    <h:inputText id="id" value="#{contactosController.selected.id}" title="#{bundle.CreateContactosTitle_id}" required="true" requiredMessage="#{bundle.CreateContactosRequiredMessage_id}"/>
+                    <h:outputLabel value="#{bundle.CreateContactosLabel_nombre}" for="nombre" />
+                    <h:inputText id="nombre" value="#{contactosController.selected.nombre}" title="#{bundle.CreateContactosTitle_nombre}" required="true" requiredMessage="#{bundle.CreateContactosRequiredMessage_nombre}"/>
+                    <h:outputLabel value="#{bundle.CreateContactosLabel_apellido}" for="apellido" />
+                    <h:inputText id="apellido" value="#{contactosController.selected.apellido}" title="#{bundle.CreateContactosTitle_apellido}" required="true" requiredMessage="#{bundle.CreateContactosRequiredMessage_apellido}"/>
+                    <h:outputLabel value="#{bundle.CreateContactosLabel_direccion}" for="direccion" />
+                    <h:inputText id="direccion" value="#{contactosController.selected.direccion}" title="#{bundle.CreateContactosTitle_direccion}" />
+                    <h:outputLabel value="#{bundle.CreateContactosLabel_telefono}" for="telefono" />
+                    <h:inputText id="telefono" value="#{contactosController.selected.telefono}" title="#{bundle.CreateContactosTitle_telefono}" />
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{contactosController.create}" value="#{bundle.CreateContactosSaveLink}" />
+                <br />
+                <br />
+                <h:commandLink action="#{contactosController.prepareList}" value="#{bundle.CreateContactosShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.CreateContactosIndexLink}"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>
