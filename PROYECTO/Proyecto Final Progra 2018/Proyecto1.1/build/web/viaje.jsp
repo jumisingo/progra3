@@ -46,18 +46,29 @@
             </ul>
         </div>
         <sql:query var="info" dataSource="jdbc/sample">
-            SELECT * FROM viajes
-            WHERE id = '${param.id}'
+            SELECT * FROM app.viaje WHERE destino = '${param.destino}'
         </sql:query>
 
 
-        <c:forEach var="viaje" items="${info.rows}">
-            <h1>Destino: ${viaje.destino}</h1>
-            <h1>Origen: ${viaje.origen}</h1>
-            <h3 class="precio">Precio: ${viaje.precio}$</h3>
-            <h3>${viaje.descuento}</h3>
             
-
+            <thead>
+                        <tr>PLAN<th>
+                        <th>DESTINO </th>
+                        <th>ORIGEN</th>
+                        <th>PRECIO</th>
+                        <th>DESCUENTO</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+        <c:forEach var="viaje" items="${info.rows}">
+            <tr>
+                        <th>${viaje.codigo}</th>
+                        <td>${viaje.origen}</td>
+                        <td>${viaje.destino}</td>
+                        <td>${viaje.precio}</td>
+                        <td>${viaje.descuento}</td>
+            </tr>
         </c:forEach>
            <footer>
             <p>ViajesCR</p>
